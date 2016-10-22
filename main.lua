@@ -3,6 +3,8 @@ local Map = require("map")
 function love.load()
 	map = Map.new()
 	tag = 0     --0:normal  1:win  -1:gameover
+	source = love.audio.newSource("tkh.mp3")
+	love.audio.play(source)
 end
 
 function love.draw()

@@ -184,6 +184,7 @@ function Map.restart(self, x, y)
 		self:initBlock()
 		tag = 0
 	end
+	love.audio.rewind(source)
 end
 
 return Map
